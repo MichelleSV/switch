@@ -1,4 +1,4 @@
-var opciones = parseInt(prompt("escoja una opción: \n" + 
+  var opciones = parseInt(prompt("escoja una opción: \n" + 
 	"1. Suma\n" +
 	"2. Resta\n" +
     "3. Multiplicación\n" +
@@ -7,7 +7,7 @@ var opciones = parseInt(prompt("escoja una opción: \n" +
     "6. ¿Cuál es menor?\n" +
     "7. ¿Cuál es mayor?"
     ));
-
+if(opciones>0 && opciones<=7){
 var numero1 = parseInt(prompt("Ingresa tu número 1"));
 var numero2 = parseInt(prompt("Ingresa tu número 2"));
 
@@ -46,7 +46,7 @@ switch(opciones){
             document.write("El número mayor es " + numero2);   
         }
         break;   
-    default:
-        document.write("Eso no es válido joven");
-        break;
+  }  
+} else {
+   document.write("Eso no es válido joven");
 }
